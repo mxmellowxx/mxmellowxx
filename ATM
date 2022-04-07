@@ -1,0 +1,162 @@
+#include <iostream>
+#include <cstdlib>
+using namespace std;
+
+
+void pin(int & v1, int & v2){
+    int v3;
+if(v2!=v1){cout<<"\nCONFIRM YOUR PIN NUMBER: ";
+cin>>v3;}
+    else{cout<<"\n*NEW PIN CANNOT BE OLD PIN*\n";
+    exit(0);}
+ if(v2==v3){cout<<"\nPIN IS CHANGED SUCCESSFULLY\n";
+ v1=v2;
+ }
+   else{cout<<"\nPASSWORDS ARE MISMATCHING";}}
+
+
+
+   void withdrawal(float & x1, float & x2){
+      if(x1>x2){
+       x1=x1-x2;
+      cout<<"\nTRANSACTION PROCCESSING....\n\nYOUR CURRENT BALANCE IS "<<x1<<".INR";}
+      else{cout<<"\nMONEY IS NOT DEDUCTED\n";}}
+
+
+int main(){
+    int p1=1055,p2=8989,p3=7878,p4=4444,p5=1234,p6=5555;
+    float n1=20987.34 ,n2,n3=55000,n4=65089,n5=1890.7,n6=10678.2,n7=108988;
+int c1,c2,c3;
+char l1;
+
+LOOP:
+cout<<"\nENTER YOUR PIN NUMBER: ";
+cin>>c1;
+if(c1==p1){
+    cout<<"\nHELLO PAUL WALKER,\n\tWELCOME TO SIB";
+    cout<<"\n1.BALANCE ";
+    cout<<"\n2.WITHDRAWAL ";
+    cout<<"\n3.PIN CHANGE ";
+    cout<<"\n4.NET BANKING ";
+    cout<<"\n5.EXIT ";
+    cout<<"\nENTER OPTION NUMBER: ";
+    cin>>c2;
+      if(c2==1){cout<<"\nYOUR BALANCE IS "<<n1<<".INR";}
+        else if(c2==2){cout<<"\nENTER WITHDRAWAL AMOUNT: ";
+        cin>>n2;
+        withdrawal(n1,n2);}
+           else if(c2==3){cout<<"ENTER NEW 4-DIGIT PIN: ";
+           cin>>c3;
+            pin(p1,c3);}
+                else if(c2==4){cout<<"\nSORRY....NET BANKING IS NOT AVAILABLE AT THIS MOMENT\n"; }
+                       else if(c2==5){cout<<"\nTHANK YOU FOR USING SIB\n";}
+                             else{cout<<"\nINVALID OPTION";}}
+
+else if(c1==p2){
+    cout<<"\nHELLO DWAYNE,\n\tWELCOME TO SIB";
+    cout<<"\n1.BALANCE ";
+    cout<<"\n2.WITHDRAWAL ";
+    cout<<"\n3.PIN CHANGE ";
+    cout<<"\n4.NET BANKING ";
+    cout<<"\n5.EXIT ";
+    cout<<"\nENTER OPTION NUMBER: ";
+    cin>>c2;
+      if(c2==1){cout<<"\nYOUR BALANCE IS "<<n3<<".INR";}
+        else if(c2==2){cout<<"\nENTER WITHDRAWAL AMOUNT: ";
+        cin>>n2;
+        withdrawal(n3,n2);}
+           else if(c2==3){cout<<"ENTER NEW 4-DIGIT PIN: ";
+           cin>>c3;
+            pin(p2,c3);}
+                else if(c2==4){cout<<"\nSORRY....NET BANKING IS NOT AVAILABLE AT THIS MOMENT\n"; }
+                       else if(c2==5){cout<<"\nTHANK YOU FOR USING SIB\n";}
+                             else{cout<<"\nINVALID OPTION";} }
+
+else if(c1==p3){
+    cout<<"\nHELLO RON,\n\tWELCOME TO SIB";
+    cout<<"\n1.BALANCE ";
+    cout<<"\n2.WITHDRAWAL ";
+    cout<<"\n3.PIN CHANGE ";
+    cout<<"\n4.NET BANKING ";
+    cout<<"\n5.EXIT ";
+    cout<<"\nENTER OPTION NUMBER: ";
+    cin>>c2;
+      if(c2==1){cout<<"\nYOUR BALANCE IS "<<n4<<".INR";}
+        else if(c2==2){cout<<"\nENTER WITHDRAWAL AMOUNT: ";
+        cin>>n2;
+        withdrawal(n4,n2);}
+           else if(c2==3){cout<<"ENTER NEW 4-DIGIT PIN: ";
+           cin>>c3;
+            pin(p3,c3);}
+                else if(c2==4){cout<<"\nSORRY....NET BANKING IS NOT AVAILABLE AT THIS MOMENT\n"; }
+                       else if(c2==5){cout<<"\nTHANK YOU FOR USING SIB\n";}
+                             else{cout<<"\nINVALID OPTION";} }
+       
+else  if(c1==p4){
+    cout<<"\nHELLO ELIZABETH,\n\tWELCOME TO SIB";
+    cout<<"\n1.BALANCE ";
+    cout<<"\n2.WITHDRAWAL ";
+    cout<<"\n3.PIN CHANGE ";
+    cout<<"\n4.NET BANKING ";
+    cout<<"\n5.EXIT ";
+    cout<<"\nENTER OPTION NUMBER: ";
+    cin>>c2;
+      if(c2==1){cout<<"\nYOUR BALANCE IS "<<n5<<".INR";}
+        else if(c2==2){cout<<"\nENTER WITHDRAWAL AMOUNT: ";
+        cin>>n2;
+        withdrawal(n5,n2);}
+           else if(c2==3){cout<<"ENTER NEW 4-DIGIT PIN: ";
+           cin>>c3;
+            pin(p4,c3);}
+                else if(c2==4){cout<<"\nSORRY....NET BANKING IS NOT AVAILABLE AT THIS MOMENT\n"; }
+                       else if(c2==5){cout<<"\nTHANK YOU FOR USING SIB\n";}
+                             else{cout<<"\nINVALID OPTION";}}
+            
+  else if(c1==p5){
+    cout<<"\nHELLO AJIN ,\n\tWELCOME TO SIB";
+    cout<<"\n1.BALANCE ";
+    cout<<"\n2.WITHDRAWAL ";
+    cout<<"\n3.PIN CHANGE ";
+    cout<<"\n4.NET BANKING ";
+    cout<<"\n5.EXIT ";
+    cout<<"\nENTER OPTION NUMBER: ";
+    cin>>c2;
+      if(c2==1){cout<<"\nYOUR BALANCE IS "<<n6<<".INR";}
+        else if(c2==2){cout<<"\nENTER WITHDRAWAL AMOUNT: ";
+        cin>>n2;
+        withdrawal(n6,n2);}
+           else if(c2==3){cout<<"ENTER NEW 4-DIGIT PIN: ";
+           cin>>c3;
+            pin(p5,c3);}
+                else if(c2==4){cout<<"\nSORRY....NET BANKING IS NOT AVAILABLE AT THIS MOMENT\n"; }
+                       else if(c2==5){cout<<"\nTHANK YOU FOR USING SIB\n";}
+                             else{cout<<"\nINVALID OPTION";}} 
+  else if(c1==p6){
+    cout<<"\nHELLO MILLIE,\n\tWELCOME TO SIB";
+    cout<<"\n1.BALANCE ";
+    cout<<"\n2.WITHDRAWAL ";
+    cout<<"\n3.PIN CHANGE ";
+    cout<<"\n4.NET BANKING ";
+    cout<<"\n5.EXIT ";
+    cout<<"\nENTER OPTION NUMBER: ";
+    cin>>c2;
+      if(c2==1){cout<<"\nYOUR BALANCE IS "<<n7<<".INR";}
+        else if(c2==2){cout<<"\nENTER WITHDRAWAL AMOUNT: ";
+        cin>>n2;
+        withdrawal(n7,n2);}
+           else if(c2==3){cout<<"ENTER NEW 4-DIGIT PIN: ";
+           cin>>c3;
+            pin(p6,c3);}
+                else if(c2==4){cout<<"\nSORRY....NET BANKING IS NOT AVAILABLE AT THIS MOMENT\n"; }
+                       else if(c2==5){cout<<"\nTHANK YOU FOR USING SIB\n";}
+                             else{cout<<"\nINVALID OPTION";}}
+                
+else{cout<<"\nWRONG PIN!!\n";}
+
+cout<<"\n\nTRY AGAIN?(Y/N)";
+cin>>l1;
+if(l1=='y'||l1=='Y'){
+    goto LOOP;
+}else{cout<<"\n\tTHANKYOU FOR USING SIB\n";}
+return 0;
+}
